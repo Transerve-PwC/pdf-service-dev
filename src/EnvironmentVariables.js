@@ -20,7 +20,7 @@ const envVariables = {
     process.env.DEFAULT_LOCALISATION_LOCALE || "en_IN",
     DEFAULT_LOCALISATION_TENANT:
     process.env.DEFAULT_LOCALISATION_TENANT || "up",
-    DATA_CONFIG_URLS: "file:///Users/sunitha.ranjith/UP/rainmaker-customisation/configs/pdf-service/data-config/consolidatedreceipt.json",
-    FORMAT_CONFIG_URLS:"file:///Users/sunitha.ranjith/UP/rainmaker-customisation/configs/pdf-service/format-config/consolidatedreceipt.json"
+    DATA_CONFIG_URLS: "https://raw.githubusercontent.com/Transerve-PwC/rainmaker-customisation/UP-MODIFICATIONS/configs/pdf-service/data-config/consolidatedreceipt.json",
+    FORMAT_CONFIG_URLS:"https://raw.githubusercontent.com/Transerve-PwC/rainmaker-customisation/UP-MODIFICATIONS/configs/pdf-service/format-config/consolidatedreceipt.json"
 };
 export default envVariables;

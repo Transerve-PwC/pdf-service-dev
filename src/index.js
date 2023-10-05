@@ -17,6 +17,7 @@ import set from "lodash/set";
 import { strict } from "assert";
 import { Recoverable } from "repl";
 import { fileStoreAPICall } from "./utils/fileStoreAPICall";
+import { _fileStoreAPICall } from "./utils/fileStoreAPICall";
 import { directMapping } from "./utils/directMapping";
 import { externalAPIMapping } from "./utils/externalAPIMapping";
 import envVariables from "./EnvironmentVariables";
@@ -207,7 +208,7 @@ const uploadFiles = async (
     doc.on("end", function() {
       // console.log("enddddd "+cr++);
       var data = Buffer.concat(chunks);
-      fileStoreAPICall(filename, tenantId, data)
+      _fileStoreAPICall(filename, tenantId, data)
         .then(result => {
           listOfFilestoreIds.push(result);
           if (!isconsolidated) {
